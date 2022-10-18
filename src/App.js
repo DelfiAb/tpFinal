@@ -7,7 +7,7 @@ import { JsFunction } from "./components/fundamentos/05-JsFunction";
 import { ObjetosLiterales } from "./components/fundamentos/03-Object";
 import { JsArray } from "./components/fundamentos/04-Array";
 */
-import {NavBar} from './components/NavBarPP/Navbar.js';
+import {NavBar} from './components/NavBarPP/navbar.js';
 import {About} from './components/About/about.js';
 import {Recetas} from './components/Recetas/recetas.js';
 import {Shop} from './components/Shop/shop.js';
