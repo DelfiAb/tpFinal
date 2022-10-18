@@ -31,9 +31,6 @@ export const NavBar = () => {
                                         <a className="nav-link" href="#rece_titulo">Recetas</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#rece-dia-t">Receta del día</a>
-                                    </li>
-                                    <li className="nav-item">
                                         <a className="nav-link" href="#shop">Shop</a></li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="#contact_us">Contact us</a>
