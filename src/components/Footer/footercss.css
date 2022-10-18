@@ -1,0 +1,147 @@
+:root{
+    --primary: rgb(255, 245, 230);
+    --font_color: black;
+    --brown: rgb(144, 52, 19);
+    --footer: rgb(218, 130, 67, 0.66);
+    
+}
+
+/*footer*/
+@media screen and (max-width: 768px) {
+    footer article {
+        width: 90vw; 
+        margin: 10px auto; 
+    }
+}
+@media screen and (max-width: 390px) {
+    footer article {
+        width: 90vw; 
+        margin: 10px auto; 
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer-left, .footer-right
+     {
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 390px) {
+    .footer-left, .footer-right
+     {
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
+
+.footer{
+    grid-template-columns: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0px;
+    margin: 0 auto;
+    background: var(--footer);
+}
+.footer-left{
+    width:25vw;
+}
+.footer img{
+    display: flex;
+    justify-content: center;
+}
+.footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 22px;
+    left: 0;
+    color: var(--font_color);
+    display: inline-block;
+    padding-right: 5px;
+  }
+.footer .footer-links .link-1:before {
+    content: none;
+  }
+.footer .footer-links{
+	color: var(--font_color);
+	margin: 20px 0 12px;
+	padding: 0;
+}
+.footer .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+    font-family: 'Nunito', sans-serif;
+    font-weight:500;
+    font-size: 16px;
+	text-decoration: none;
+	color:  var(--font_color);
+}
+.copyright {
+    display: inline-block;
+	color: var(--font_color);
+    font-weight:500;
+    font-family: 'Nunito', sans-serif;
+	vertical-align: middle;
+	margin:0 auto;
+}
+
+/*columna 2*/
+.footer-right{
+    font-family: 'Nunito', sans-serif;
+    width: 35vw;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none;
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons a{
+  background-color:#33383b;
+  color: white;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998;
+  color: white;
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced;
+  color: white;
+}
+.social-icons a.pinterest:hover
+{
+  background-color: #e60023;
+  color: white;
+}
+.social-icons a.insta:hover
+{
+  background-color:#eb3d94;
+  color: white;
+}

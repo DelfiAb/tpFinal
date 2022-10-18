@@ -1,0 +1,33 @@
+:root{
+    --primary: rgb(255, 245, 230);
+    --font_color: black;
+    --brown: rgb(144, 52, 19);
+    --footer: rgb(218, 130, 67, 0.66);
+    
+}
+
+#contact_us{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: var(--brown);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    color: white 
+}
+#Formulario {
+    display:flex;
+    justify-self: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 19px;
+    background-color: var(--primary);
+}
+
+#Formulario input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+}

@@ -1,0 +1,122 @@
+:root{
+    --primary: rgb(255, 245, 230);
+    --font_color: black;
+    --brown: rgb(144, 52, 19);
+    --footer: rgb(218, 130, 67, 0.66);
+    
+}
+#shop{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: var(--brown);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    color: white
+}
+#shopp{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--primary);
+}
+.compras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: auto;
+}
+.compras .box{
+    position: relative;
+    width: 275px;
+    height: 275px;
+    background: var(--primary);
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-top: 45px;
+}
+.compras:hover .box{
+    transform: rotateY(25deg);
+}
+.compras .box:hover~.box{
+    transform: rotateY(-25deg);
+    
+}
+.compras .box:hover{
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+.compras .box .imgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.compras .box .imgBox:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary), var(--footer));
+    z-index: 1;
+    opacity: 0;
+    transition: 0.3s;
+    mix-blend-mode: multiply;    
+}
+.compras .box:hover .imgBox:before{
+    opacity: 1;
+}
+.compras .box .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.compras .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+.compras .box .content h2{
+    color: white;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    transform: translateY(200px);
+    transition-delay: 0.3s;
+}
+.compras .box:hover .content h2{
+    transform: translateY(0px);
+}
+
+.compras .box .content p{
+    color: white;
+    transition: 0.5s;
+    font-size: 14px;
+    transform: translateY(200px);
+    transition-delay: 0.4s;
+    font-family: 'Nunito', sans-serif
+}
+.compras .box:hover .content p{
+    transform: translateY(0px);
+}

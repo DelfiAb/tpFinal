@@ -1,0 +1,44 @@
+#about_us{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:var(--brown);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;
+    color: white
+}
+.profiles{
+    height: 100%;
+    width: 100%;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profiles .ppal img{
+    width: 580px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+.all-text{
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+.ppal{
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.all-text p{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    color: var(--font_color);
+    line-height: 20px;
+    margin-bottom: 30px;
+}
