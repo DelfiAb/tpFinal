@@ -3,7 +3,7 @@ import "./navbar.css";
  
 export const NavBar = () => {
     return(
-        //aca metemos los elementos del html como siempre
+        //aca van los elementos del html como siempre
         //todas las class se cambian por classNameName xq class es una palabra reservada de js para otra cosa
        
         <body>

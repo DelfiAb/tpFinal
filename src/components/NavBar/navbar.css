@@ -44,8 +44,8 @@ nav a:hover{
 
 /*inicio slider*/
 .slider{
-    /*background-image: url(.src/assets/imagenes/slider.jpg);*/
-    background-image: url(https://kirbiecravings.com/wp-content/uploads/2020/03/crazy-chocolate-cake-10.jpg);
+    /*background-image: url(.src/assets/imagenes/slider.jpg); foto de prueba abajo*/
+    background-image: url(https://kirbiecravings.com/wp-content/uploads/2020/03/crazy-chocolate-cake-10.jpg); /*prueba*/
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
