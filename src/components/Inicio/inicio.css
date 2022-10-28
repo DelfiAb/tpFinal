@@ -1,0 +1,50 @@
+:root{
+    --primary: rgb(255, 245, 230);
+    --font_color: black;
+    --brown: rgb(144, 52, 19);
+    --footer: rgb(218, 130, 67, 0.66);
+    
+}
+.slider{
+    background-image: url(); 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+    z-index: 2;
+}
+.slider::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 217, 167, 0.247);
+    z-index: -1; 
+}
+.food_talk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 65px;
+    color: white 
+}
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    font-family: 'Kalam', cursive;
+    font-size: 35px;
+    color: white;
+}
+.slogan_botones{
+    overflow: hidden;
+}
+.btn-inicio{
+    border-radius: 55px;
+    
+}

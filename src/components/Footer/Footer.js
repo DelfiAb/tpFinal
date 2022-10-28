@@ -1,7 +1,10 @@
 import React from "react";
 import "./footercss.css"; 
+import { Link } from "react-router-dom";
+import { logo } from "../../assets/imagenes";
 
 import { AiOutlineInstagram } from 'react-icons/fa';
+
 
 
 export const Footer = () => {
@@ -9,13 +12,13 @@ export const Footer = () => {
         <footer className="footer"> 
             <article className="footer-left ">
                 <img className="footer_logo"
-                    src="src\assets\imagenes\Food_talk_logo.png"
+                    src={logo}
                     alt="Logo Food Talk"
                     width="200"
                     height="200" />
                 <p className="footer-links">
-                    <a href="#nav" className="link-1">Inicio</a>
-                    <a href="#about_us">About</a>    
+                    <Link to="/"><a href="#nav" className="link-1">Inicio</a></Link>
+                    <Link to="/pp2"><a href="#about_us">About</a></Link>    
                     <a href="#rece_titulo">Recetas</a>          
                     <a href="#shop">Shop</a>      
                     <a href="#contact_us">Contact</a>

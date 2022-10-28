@@ -1,4 +1,5 @@
 import React from 'react';
+import { about_us } from '../../assets/imagenes';
 import "./about.css"; 
 
 export const About = () => {
@@ -13,7 +14,7 @@ export const About = () => {
 
             <div className="profiles">
                 <div className="ppal">
-                    <img src="./assets/imagenes/aboutuspic.png" alt="Our team" />
+                    <img src={about_us} alt="Our team" />
                     <div className="all-text">
                         <p>
                             Food talk fue creado por un grupo de personas que están buscando, creando y mejorando recetas constantemente para compartir!<br/> 

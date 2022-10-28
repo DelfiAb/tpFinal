@@ -3,7 +3,7 @@ import "./contacto.css";
 
 export const Contacto = () => {
     return(
-        <body>
+        <>
             <section id="contact_us">
                 <div>
                     <h1 className="animate_animated animate_fadeInLeft">Contact Us!</h1>
@@ -75,7 +75,7 @@ export const Contacto = () => {
                     </div>
                 </div>
             </section>
-        </body>
+        </> 
               
     )
 }

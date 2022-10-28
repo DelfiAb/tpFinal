@@ -1,4 +1,5 @@
 import React from "react";
+import { aperitivos, breakfast, cena, dulce, ensalada, mexican, oriental, sandwich } from "../../assets/imagenes";
 import "./recetas.css";
 
 export const Recetas = () => {
@@ -15,7 +16,7 @@ export const Recetas = () => {
                     
                     <div className="box">
                         <div className="imgBox">
-                            <img src="./assets/imagenes/breakfast.jpg" className="card-img-top" alt="img desayuno"/>
+                            <img src={breakfast} className="card-img-top" alt="img desayuno"/>
                         </div>
                         <div className="content">
                             <div>
@@ -28,7 +29,7 @@ export const Recetas = () => {
 
                     <div className="box">
                         <div className="imgBox">
-                            <img src="./assets/imagenes/cena.jpg" className="card-img-top" alt="img almuerzos y cenas"/>
+                            <img src={cena} className="card-img-top" alt="img almuerzos y cenas"/>
                         </div>
                         <div className="content">
                             <div>
@@ -41,7 +42,7 @@ export const Recetas = () => {
 
                     <div className="box">
                         <div className="imgBox">
-                            <img src="./assets/imagenes/sandwich.jpg" className="card-img-top" alt="img Sandwiches"/>
+                            <img src={sandwich} className="card-img-top" alt="img Sandwiches"/>
                         </div>
                         <div className="content">
                             <div>
@@ -54,7 +55,7 @@ export const Recetas = () => {
                     
                     <div className="box">
                         <div className="imgBox">
-                            <img src="./assets/imagenes/dulce.jpg" className="card-img-top" alt="img dulces"/>
+                            <img src={dulce} className="card-img-top" alt="img dulces"/>
                         </div>
                         <div className="content">
                             <div>
@@ -67,7 +68,7 @@ export const Recetas = () => {
                     
                     <div className="box">
                         <div className="imgBox">
-                            <img src="./assets/imagenes/mexican.jpg" className="card-img-top" alt="img comida mexicana"/>
+                            <img src={mexican} className="card-img-top" alt="img comida mexicana"/>
                         </div>
                         <div className="content">
                             <div>
@@ -80,7 +81,7 @@ export const Recetas = () => {
                     
                     <div className="box">
                         <div className="imgBox">
-                            <img src="./assets/imagenes/oriental.jpg" className="card-img-top" alt="img comida mexicana"/>
+                            <img src={oriental} className="card-img-top" alt="img comida mexicana"/>
                         </div>
                         <div className="content">
                             <div>
@@ -93,7 +94,7 @@ export const Recetas = () => {
                     
                     <div className="box">
                         <div className="imgBox">
-                            <img src="./assets/imagenes/aperitivos.jpg" className="card-img-top" alt="img Aperitivos" />
+                            <img src={aperitivos} className="card-img-top" alt="img Aperitivos" />
                         </div>
                         <div className="content">
                             <div>
@@ -106,7 +107,7 @@ export const Recetas = () => {
                     
                     <div className="box">
                         <div className="imgBox">
-                            <img src="./assets/imagenes/ensalada.jpg" className="card-img-top" alt="img dulces" />
+                            <img src={ensalada} className="card-img-top" alt="img dulces" />
                         </div>
                         <div className="content">
                             <div>

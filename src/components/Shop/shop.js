@@ -1,5 +1,7 @@
 import React from "react";
+import { clase, experiencia, libro, pasta, protein, repostera, tazas } from "../../assets/imagenes";
 import "./shop.css";
+
 
 export const Shop = () => {
     return(
@@ -15,7 +17,7 @@ export const Shop = () => {
                 <div className="container compras">
                         <div className="box">
                             <div className="imgBox">
-                                <img src="./assets/imagenes/libro.jpg" alt="Libro de recetas" />
+                                <img src={libro} alt="Libro de recetas" />
                             </div>
                             <div className="content">
                                 <div>
@@ -26,7 +28,7 @@ export const Shop = () => {
                         </div>
                         <div className="box">
                             <div className="imgBox">
-                                <img src="./assets/imagenes/protein.jpg" alt="Saborizantes" />
+                                <img src={protein} alt="Saborizantes" />
                             </div>
                             <div className="content">
                                 <div>
@@ -37,7 +39,7 @@ export const Shop = () => {
                         </div>
                     <div className="box">
                         <div className="imgBox">
-                            <img src="./assets/imagenes/clase_virtual.jpg" alt="Clases virtuales" />
+                            <img src={clase} alt="Clases virtuales" />
                         </div>
                         <div className="content">
                             <div>
@@ -48,7 +50,7 @@ export const Shop = () => {
                     </div>
                     <div className="box">
                         <div className="imgBox">
-                            <img src="./assets/imagenes/tazas.jpg" alt="Vajilla" />
+                            <img src={tazas} alt="Vajilla" />
                         </div>
                         <div className="content">
                             <div>
@@ -59,7 +61,7 @@ export const Shop = () => {
                     </div>
                     <div className="box">
                         <div className="imgBox">
-                            <img src="./assets/imagenes/repostera.jpg" alt="Repostería" />
+                            <img src={repostera} alt="Repostería" />
                         </div>
                         <div className="content">
                             <div>
@@ -70,7 +72,7 @@ export const Shop = () => {
                     </div>
                     <div className="box">
                         <div className="imgBox">
-                            <img src="./assets/imagenes/experiencia.jpg" alt="Experiencias" />
+                            <img src={experiencia} alt="Experiencias" />
                         </div>
                         <div className="content">
                             <div>
