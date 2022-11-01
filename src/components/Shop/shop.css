@@ -104,6 +104,8 @@
     font-family: 'Nunito', sans-serif;
     transform: translateY(200px);
     transition-delay: 0.3s;
+    margin-left: 9px;
+    margin-right: 9px;
 }
 .compras .box:hover .content h2{
     transform: translateY(0px);
@@ -115,7 +117,9 @@
     font-size: 14px;
     transform: translateY(200px);
     transition-delay: 0.4s;
-    font-family: 'Nunito', sans-serif
+    font-family: 'Nunito', sans-serif;
+    margin-left: 9px;
+    margin-right: 9px;
 }
 .compras .box:hover .content p{
     transform: translateY(0px);

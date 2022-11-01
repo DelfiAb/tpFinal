@@ -1,9 +1,17 @@
+:root{
+    --primary: rgb(255, 245, 230);
+    --font_color: black;
+    --brown: rgb(144, 52, 19);
+    --footer: rgb(218, 130, 67, 0.66);
+    
+}
 #about_us{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color:var(--brown);
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
     font-size: 25px;
     color: white
 }
@@ -36,8 +44,9 @@
     justify-content: space-around;
 }
 .all-text p{
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
     color: var(--font_color);
     line-height: 20px;
     margin-bottom: 30px;

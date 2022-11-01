@@ -5,8 +5,9 @@
     --footer: rgb(218, 130, 67, 0.66);
     
 }
+
 .slider{
-    background-image: url(); 
+    background-image: url(https://images.pexels.com/photos/8307646/pexels-photo-8307646.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); 
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -30,14 +31,15 @@
     background-color: none;
     font-family: 'Noto Sans', sans-serif;
     font-size: 65px;
-    color: white 
+    color: white;
+    margin-top: 180px;
 }
 .slogan {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: none;
-    font-family: 'Kalam', cursive;
+    font-family: "Kalam", cursive;
     font-size: 35px;
     color: white;
 }
@@ -45,6 +47,8 @@
     overflow: hidden;
 }
 .btn-inicio{
-    border-radius: 55px;
-    
+    border-radius: 10px;
+    margin-left: 9px;
+    margin-right: 9px;
+     
 }
