@@ -7,12 +7,15 @@ import { JsArray } from "./components/fundamentos/04-Array";
 */
 
 import './App.css'
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route,} from "react-router-dom";
 
 import {NavBar} from './components/NavBar/navbar.js';
 import {Footer} from './components/Footer/Footer.js';
 import { Home } from './components/pages/Home';
-import { Pp2 } from './components/pages/Pp2';
+import { Aboutpages } from './components/pages/Aboutpages';
+import { Recetaspages } from './components/pages/Recetaspages';
+import { Shoppages } from './components/pages/Shoppages';
+import { Contactopages } from './components/pages/Contactopages';
 
 
 function App() {
@@ -23,7 +26,10 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/pp2" element={<Pp2 />} />
+          <Route path="/about_us" element={<Aboutpages/>} />
+          <Route path="/rece_titulo" element={<Recetaspages/>} />
+          <Route path="/shop" element={<Shoppages/>} />
+          <Route path="/contact_us" element={<Contactopages/>} />
         </Routes>
 
       <Footer />   

@@ -1,6 +1,9 @@
 import React from "react";
 import { logo } from "../../assets/imagenes";
 import "./navbar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom'
 
 
  
@@ -23,24 +26,24 @@ export const NavBar = () => {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li className="nav-item">
+                                <Link to="/" className="nav-item">
                                     <a className="nav-link active" aria-current="page" href="#nav">Inicio</a>
-                                </li>
-                                <li className="nav-item">
+                                </Link>
+                                <Link to="/about_us" className="nav-item">
                                     <a className="nav-link" href="#about_us">About</a>
-                                </li>
-                                <li className="nav-item">
+                                </Link>
+                                <Link to="/rece_titulo" className="nav-item">
                                     <a className="nav-link" href="#rece_titulo">Recetas</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#shop">Shop</a></li>
-                                <li className="nav-item">
+                                </Link>
+                                <Link to="/shop" className="nav-item">
+                                    <a className="nav-link" href="#shop">Shop</a>
+                                </Link>
+                                <Link to="/contact_us" className="nav-item">
                                     <a className="nav-link" href="#contact_us">Contact us</a>
-                                </li>
-                                
+                                </Link>
                             </ul>
 
-                            <button className="btn btn-outline-secondary ms-lg-3"><i className="fa-solid fa-user"> </i> Mi Cuenta</button>
+                            <button className="btn btn-outline-secondary ms-lg-3"><FontAwesomeIcon icon={faUser} /> Mi Cuenta</button>
                         </div>
                     </div>
                 </nav>

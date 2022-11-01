@@ -2,10 +2,8 @@ import React from "react";
 import "./footercss.css"; 
 import { Link } from "react-router-dom";
 import { logo } from "../../assets/imagenes";
-
-import { AiOutlineInstagram } from 'react-icons/fa';
-
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faFacebookF, faInstagram, faPinterestP, faTwitter} from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = () => {
     return(
@@ -16,13 +14,15 @@ export const Footer = () => {
                     alt="Logo Food Talk"
                     width="200"
                     height="200" />
+
                 <p className="footer-links">
-                    <Link to="/"><a href="#nav" className="link-1">Inicio</a></Link>
-                    <Link to="/pp2"><a href="#about_us">About</a></Link>    
-                    <a href="#rece_titulo">Recetas</a>          
-                    <a href="#shop">Shop</a>      
-                    <a href="#contact_us">Contact</a>
+                    <Link to="/"><a className="link-1">Inicio</a></Link>
+                    <Link to="/about_us"><a >About</a></Link>    
+                    <Link to="/rece_titulo"><a>Recetas</a></Link>        
+                    <Link to="/shop"><a>Shop</a></Link> 
+                    <Link to="/contact_us"><a>Contact</a></Link>   
                 </p>
+
                 <p className="copyright">© 2022 Food Talk - All Rights Reserved.</p>                
             </article>
             <article className="footer-right"> 
@@ -39,10 +39,10 @@ export const Footer = () => {
                 <h5><strong>Seguínos en nuestras redes!</strong></h5>
                 <br></br>
                 <ul className="social-icons">
-                    <li><a className="insta" href="#"><i className="fa fa-instagram"></i></a></li>
-                    <li><a className="facebook" href="#"><i className="fa fa-facebook"></i></a></li>
-                    <li><a className="pinterest" href="#"><i className="fa fa-pinterest"></i></a></li>
-                    <li><a className="twitter" href="#"><i className="fa fa-twitter"></i></a></li>  
+                    <li><a className="insta" href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                    <li><a className="facebook" href="#"><FontAwesomeIcon icon={faFacebookF} /></a></li>
+                    <li><a className="pinterest" href="#"><FontAwesomeIcon icon={faPinterestP} /></a></li>
+                    <li><a className="twitter" href="#"><FontAwesomeIcon icon={faTwitter}/></a></li> 
                 </ul>
             </article>
                  
