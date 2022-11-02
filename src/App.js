@@ -7,7 +7,7 @@ import { JsArray } from "./components/fundamentos/04-Array";
 */
 
 import './App.css'
-import {Routes, Route,} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 
 import {NavBar} from './components/NavBar/navbar.js';
 import {Footer} from './components/Footer/Footer.js';
@@ -18,11 +18,13 @@ import { Shoppages } from './components/pages/Shoppages';
 import { Contactopages } from './components/pages/Contactopages';
 
 
+
 function App() {
   //  console.log(dataProducts)
   return (
     <>
       <NavBar />
+      
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -32,7 +34,8 @@ function App() {
           <Route path="/contact_us" element={<Contactopages/>} />
         </Routes>
 
-      <Footer />   
+      <Footer />  
+   
       
     </>
     

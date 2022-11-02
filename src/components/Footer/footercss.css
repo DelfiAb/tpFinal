@@ -55,7 +55,7 @@
     font-size: 22px;
     left: 0;
     color: var(--font_color);
-    display: inline-block;
+    display:inline-block;
     padding-right: 5px;
   }
 .footer .footer-links .link-1:before {

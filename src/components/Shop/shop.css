@@ -5,12 +5,13 @@
     --footer: rgb(218, 130, 67, 0.66);
     
 }
-#shop{
+.shop{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     background-color: var(--brown);
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
     font-size: 25px;
     color: white
 }
@@ -39,6 +40,7 @@
     overflow: hidden;
     margin-right: 15px;
     margin-top: 45px;
+    margin-bottom: 5px;
 }
 .compras:hover .box{
     transform: rotateY(25deg);
@@ -122,5 +124,20 @@
     margin-right: 9px;
 }
 .compras .box:hover .content p{
+    transform: translateY(0px);
+}
+.compras .box .content .btn_shop{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 15px;
+    transition: 0.5s;
+    transform: translateY(200px);
+    transition-delay: 0.5s;
+    margin-left: 9px;
+    margin-right: 9px;
+      
+}
+.compras .box:hover .content .btn_shop{
     transform: translateY(0px);
 }

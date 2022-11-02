@@ -4,7 +4,7 @@ import "./recetas.css";
 
 export const Recetas = () => {
     return(
-        <body>            
+        <>            
             <section id="rece_titulo">
                 <div>
                     <h1 className="animate__animated animate__fadeInLeft">Recetario</h1>
@@ -119,9 +119,10 @@ export const Recetas = () => {
                     </div>
 
                 </div>
+                <br/> {/*como separo sin usar br, se salen las cards por el css */}
             </section>
 
-        </body>
+        </>
                
        
     )

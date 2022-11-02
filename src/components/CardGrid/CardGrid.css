@@ -5,24 +5,20 @@
     --footer: rgb(218, 130, 67, 0.66);
     
 }
-#Recetario {
-    background-color: var(--primary);
-}
-#rece_titulo{
+#shop{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    background-color:var(--brown);
-    font-family: 'Nunito', sans-serif;
-    font-weight: 500;
+    align-items: flex-end;
+    background-color: var(--brown);
+    font-family: 'Noto Sans', sans-serif;
     font-size: 25px;
     color: white
 }
-#Recetario {
-    background-color: var(--primary);
+#shopp{
     font-family: 'Noto Sans', sans-serif;
+    background-color: var(--primary);
 }
-.recetas{
+.compras{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,37 +29,38 @@
     perspective: 500px;
     margin: auto;
 }
-.recetas .box{
+.compras .box{
     position: relative;
-    width: 235px;
-    height: 375px;
+    width: 275px;
+    height: 275px;
     background: var(--primary);
     transition: 0.5s;
     transform-style: preserve-3d;
     overflow: hidden;
     margin-right: 15px;
     margin-top: 45px;
+    margin-bottom: 5px;
 }
-.recetas:hover .box{
+.compras:hover .box{
     transform: rotateY(25deg);
 }
-.recetas .box:hover~.box{
+.compras .box:hover~.box{
     transform: rotateY(-25deg);
     
 }
-.recetas .box:hover{
+.compras .box:hover{
     transform: rotateY(0deg) scale(1.25);
     z-index: 1;
     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
 }
-.recetas .box .imgBox{
+.compras .box .imgBox{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-.recetas .box .imgBox:before{
+.compras .box .imgBox:before{
     content: '';
     position: absolute;
     top: 0;
@@ -76,10 +73,10 @@
     transition: 0.3s;
     mix-blend-mode: multiply;    
 }
-.recetas .box:hover .imgBox:before{
+.compras .box:hover .imgBox:before{
     opacity: 1;
 }
-.recetas .box .imgBox img{
+.compras .box .imgBox img{
     position: absolute;
     top: 0;
     left: 0;
@@ -87,7 +84,7 @@
     height: 100%;
     object-fit: cover;
 }
-.recetas .box .content{
+.compras .box .content{
     position: absolute;
     top: 0;
     left: 0;
@@ -95,15 +92,15 @@
     height: 100%;
     z-index: 1;
     display: flex;
-    padding: 9px;
+    padding: 20px;
     align-items: flex-end;
     box-sizing: border-box;
 }
-.recetas .box .content h2{
+.compras .box .content h2{
     color: white;
     transition: 0.5s;
     text-transform: uppercase;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     font-size: 17px;
     font-family: 'Nunito', sans-serif;
     transform: translateY(200px);
@@ -111,25 +108,24 @@
     margin-left: 9px;
     margin-right: 9px;
 }
-.recetas .box:hover .content h2{
+.compras .box:hover .content h2{
     transform: translateY(0px);
 }
 
-.recetas .box .content p{
+.compras .box .content p{
     color: white;
     transition: 0.5s;
-    margin-bottom: 2px;
+    font-size: 14px;
     transform: translateY(200px);
     transition-delay: 0.4s;
     font-family: 'Nunito', sans-serif;
-    font-size: 13px;
     margin-left: 9px;
     margin-right: 9px;
 }
-.recetas .box:hover .content p{
+.compras .box:hover .content p{
     transform: translateY(0px);
 }
-.recetas .box .content .btn_rece{
+.compras .box .content .btn_shop{
     display: flex;
     justify-content: center;
     font-size: 12px;
@@ -139,8 +135,8 @@
     transition-delay: 0.5s;
     margin-left: 9px;
     margin-right: 9px;
-    
+      
 }
-.recetas .box:hover .content .btn_rece{
+.compras .box:hover .content .btn_shop{
     transform: translateY(0px);
 }
