@@ -29,10 +29,11 @@ export const Footer = () => {
                 <form>
                     <h5><strong>Suscribite para no perderte ninguna receta!</strong></h5>
                     <p>Nuevas recetas todas las semanas.</p>
+
                     <div className="d-flex w-100 gap-2">
-                    <label for="newsletter1" className="visually-hidden footer-email">Email address</label>
-                    <input id="newsletter1" type="text" className="form-control" placeholder="Email address"></input>
-                    <button className="btn btn-outline-light" type="button">Subscribe</button>
+                        <label for="newsletter1" className="visually-hidden footer-email">Email address</label>
+                        <input id="newsletter1" type="text" className="form-control" placeholder="Email address"></input>
+                        <button className="btn btn-f" type="button">Subscribe</button>
                     </div>
                 </form>
                 <br></br>

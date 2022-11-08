@@ -1,22 +1,24 @@
 :root{
     --primary: rgb(255, 245, 230);
     --font_color: black;
+    --titulos:rgb(51, 56, 59); 
     --brown: rgb(144, 52, 19);
     --footer: rgb(218, 130, 67, 0.66);
     
 }
 #Recetario {
-    background-color: var(--primary);
+    background: rgb(229,119,23);
+    background: linear-gradient(180deg, rgba(229,119,23,0.6) 4%, rgba(225,125,53,0.6) 10%, rgba(255,203,144,0.6) 36%, rgba(255,245,230,1) 100%);
 }
-#rece_titulo{
+.rece_titulo{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    background-color:var(--brown);
-    font-family: 'Nunito', sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-    color: white
+    align-items: flex-end; 
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 45px; 
+    color: var(--titulos);
 }
 #Recetario {
     background-color: var(--primary);

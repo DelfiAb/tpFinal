@@ -29,9 +29,9 @@ export const NavBar = () => {
                                 <Link to="/" className="nav-item">
                                     <a className="nav-link active" aria-current="page" href="#nav">Inicio</a>
                                 </Link>
-                                <Link to="/about_us" className="nav-item">
-                                    <a className="nav-link" href="#about_us">About</a>
-                                </Link>
+                                <Link to="/" href="#about_us" class="nav-item">
+                                    <a class="nav-link" href="#about_us">About</a>
+                                </Link> {/* como hago q baje hasta about en inicio? --> href="#about_us" no funciona?? */}
                                 <Link to="/rece_titulo" className="nav-item">
                                     <a className="nav-link" href="#rece_titulo">Recetas</a>
                                 </Link>

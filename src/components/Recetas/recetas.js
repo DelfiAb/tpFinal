@@ -6,12 +6,14 @@ export const Recetas = () => {
     return(
         <>            
             <section id="rece_titulo">
-                <div>
-                    <h1 className="animate__animated animate__fadeInLeft">Recetario</h1>
-                </div>
+                
             </section>
             
             <section id="Recetario">
+                <div className="rece_titulo">
+                    <p>Recetario</p>
+                </div>
+                
                 <div className="container recetas">
                     
                     <div className="box">

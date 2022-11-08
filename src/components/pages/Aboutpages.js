@@ -8,3 +8,5 @@ export const Aboutpages = () => {
       </>
     )
 }
+
+/*se puede borrar esta pag!*/

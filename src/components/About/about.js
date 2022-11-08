@@ -5,12 +5,11 @@ import "./about.css";
 export const About = () => {
     return ( 
         <>
-            <div id="about_us">
+            <div className="about_us">
                 <div className="col-md-28 mx-auto ">
-                    <h1 className="animate_animated animate_fadeInLeft">About</h1>
+                    <p>Sobre Nosotros</p>
                 </div>
             </div>
-
 
             <div className="profiles">
                 <div className="ppal">

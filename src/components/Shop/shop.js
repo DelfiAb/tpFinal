@@ -7,14 +7,11 @@ import "./shop.css";
 
 export const Shop = () => {
     
-    return(
-        
-        <>                    
-            
-
+    return(  
+        <>                  
             <section id="shopp">
                 <div className="shop">
-                    <h1 className="animate__animated animate__fadeInLeft">Shop</h1>
+                    <p>Shop</p>
                 </div>
 
                 <CardGrid data={productos}/> 

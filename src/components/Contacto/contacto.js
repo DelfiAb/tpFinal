@@ -6,7 +6,7 @@ export const Contacto = () => {
         <>
             <section id="contact_us">
                 <div>
-                    <h1 className="animate_animated animate_fadeInLeft">Contact Us!</h1>
+                    <p>Contact Us!</p>
                 </div>
             </section>
 
