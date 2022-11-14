@@ -1,20 +1,21 @@
 :root{
     --primary: rgb(255, 245, 230);
     --font_color: black;
-    --titulos:rgb(51, 56, 59); 
+    --titulos:white; 
     --brown: rgb(144, 52, 19);
     --footer: rgb(218, 130, 67, 0.66);
     
 }
 .about_us{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end; /*porq no se mueve a la izq?*/
-    background-color:var(--primary);
+    justify-content: center;
+    align-items: center; 
+    background-color:var(--brown);
+    padding-bottom: -10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 45px; 
-    color: var(--titulos);
+    color: white;
 }
 .profiles{
     height: 100%;

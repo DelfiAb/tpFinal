@@ -4,14 +4,14 @@ import "./navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom'
+import { Cart } from "../cart/Cart";
 
 
- 
 export const NavBar = () => {
     return(
         //aca van los elementos del html como siempre
         //todas las class se cambian por classNameName xq class es una palabra reservada de js para otra cosa
-       
+    
         <nav>
             <div className="container-fluid">
                 <nav className="navbar navbar-expand-lg navbar-light" id="nav">
@@ -43,7 +43,12 @@ export const NavBar = () => {
                                 </Link>
                             </ul>
 
+                            <li>                                
+                                <Cart /> 
+                            </li>
+
                             <button className="btn btn-outline-secondary ms-lg-3"><FontAwesomeIcon icon={faUser} /> Mi Cuenta</button>
+                        
                         </div>
                     </div>
                 </nav>

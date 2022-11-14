@@ -9,14 +9,14 @@
 
 #contact_us{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end; /*porq no se mueve a la izq?*/
-    background-color:var(--primary);
+    justify-content: center;
+    align-items: center; 
+    background-color:var(--brown);
+    padding-bottom: -10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 45px; 
-    color: var(--titulos);
-   
+    color: white;   
 }
 #Formulario {
     display:flex;
@@ -25,7 +25,10 @@
     font-weight: 400;
     font-size: 17px;
     background-color: var(--primary);
+    padding-top: 20px;
 }
+/*poner el form en el medio de la pag, como?
+poner videos --> como sacar cuando la pagina se hace mas chica?*/
 
 #Formulario input{
     display: flex;

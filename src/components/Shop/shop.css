@@ -8,18 +8,21 @@
 }
 .shop{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end; 
-    background-color:var(--primary);
+    justify-content: center;
+    align-items: center; 
+    background-color:var(--brown);
+    padding-bottom: -10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 45px; 
-    color: var(--titulos);
+    color: white;
 }
 #shopp{
     font-family: 'Noto Sans', sans-serif;
     background-color: var(--primary);
 }
+
+/*css card*/
 .compras{
     display: flex;
     justify-content: center;
@@ -30,6 +33,7 @@
     transform-style: preserve-3d;
     perspective: 500px;
     margin: auto;
+    padding-bottom: 45px;
 }
 .compras .box{
     position: relative;
@@ -41,14 +45,13 @@
     overflow: hidden;
     margin-right: 15px;
     margin-top: 45px;
-    margin-bottom: 5px;
+    border-radius: 3px;
 }
 .compras:hover .box{
     transform: rotateY(25deg);
 }
 .compras .box:hover~.box{
     transform: rotateY(-25deg);
-    
 }
 .compras .box:hover{
     transform: rotateY(0deg) scale(1.25);

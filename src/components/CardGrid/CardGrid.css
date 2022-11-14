@@ -1,3 +1,4 @@
+/*
 :root{
     --primary: rgb(255, 245, 230);
     --font_color: black;
@@ -9,7 +10,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    background-color: var(--brown);
+    background-color: red;
     font-family: 'Noto Sans', sans-serif;
     font-size: 25px;
     color: white
@@ -140,3 +141,5 @@
 .compras .box:hover .content .btn_shop{
     transform: translateY(0px);
 }
+
+*/

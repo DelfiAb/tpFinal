@@ -15,8 +15,7 @@ export const Shop = () => {
                 </div>
 
                 <CardGrid data={productos}/> 
-
-                <br /> {/*como separo sin usar br, se salen las cards por el css */}                
+                
             </section > 
         </>
         

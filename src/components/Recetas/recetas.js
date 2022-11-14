@@ -4,11 +4,7 @@ import "./recetas.css";
 
 export const Recetas = () => {
     return(
-        <>            
-            <section id="rece_titulo">
-                
-            </section>
-            
+        <>                    
             <section id="Recetario">
                 <div className="rece_titulo">
                     <p>Recetario</p>

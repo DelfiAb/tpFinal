@@ -16,6 +16,7 @@ import { Aboutpages } from './components/pages/Aboutpages';
 import { Recetaspages } from './components/pages/Recetaspages';
 import { Shoppages } from './components/pages/Shoppages';
 import { Contactopages } from './components/pages/Contactopages';
+import { CartProvider } from './components/context/CartContext';
 
 
 
@@ -23,9 +24,9 @@ function App() {
   //  console.log(dataProducts)
   return (
     <>
+      <CartProvider>
       <NavBar />
       
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about_us" element={<Aboutpages/>} />
@@ -33,8 +34,10 @@ function App() {
           <Route path="/shop" element={<Shoppages/>} />
           <Route path="/contact_us" element={<Contactopages/>} />
         </Routes>
+ 
+      </CartProvider>
 
-      <Footer />  
+      <Footer /> 
    
       
     </>

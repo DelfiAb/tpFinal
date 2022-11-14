@@ -10,3 +10,6 @@ export {default as oriental} from "./imagenes/12oriental.jpg";
 export {default as sandwich} from "./imagenes/16sandwich.jpg";
 export {default as slider} from "./imagenes/17slider.jpg";
 
+
+// SVG files // Usado en Cart.js
+export {default as cartFull} from "./svg/shopbag.svg"

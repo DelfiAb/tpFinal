@@ -8,22 +8,25 @@
 }
 #Recetario {
     background: rgb(229,119,23);
-    background: linear-gradient(180deg, rgba(229,119,23,0.6) 4%, rgba(225,125,53,0.6) 10%, rgba(255,203,144,0.6) 36%, rgba(255,245,230,1) 100%);
+    background: var(--primary);
 }
 .rece_titulo{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end; 
-    margin-left: 30px;
+    justify-content: center;
+    align-items: center; 
+    background-color:var(--brown);
+    padding-bottom: -10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 45px; 
-    color: var(--titulos);
+    color: white;
 }
 #Recetario {
     background-color: var(--primary);
     font-family: 'Noto Sans', sans-serif;
 }
+
+/*css card*/
 .recetas{
     display: flex;
     justify-content: center;
@@ -34,6 +37,8 @@
     transform-style: preserve-3d;
     perspective: 500px;
     margin: auto;
+    padding-top: 15px;
+    padding-bottom: 30px;
 }
 .recetas .box{
     position: relative;
@@ -45,6 +50,7 @@
     overflow: hidden;
     margin-right: 15px;
     margin-top: 45px;
+    border-radius: 3px;
 }
 .recetas:hover .box{
     transform: rotateY(25deg);
