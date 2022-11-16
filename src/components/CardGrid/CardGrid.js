@@ -10,17 +10,17 @@ export const CardGrid = ({data}) => {
   return (
     <>
         <div className="container compras">
-              {data.map(({ id, title, text, img}) => (
+              {data.map((productos, i) => (
 
                 <div className="box">
                     <div className="imgBox">
-                        <img src={img} alt={title} />
+                        <img src={productos.img} alt={productos.title} />
                     </div>
                     <div className="content">
                         <div>
-                            <h2>{title}</h2>
-                            <p className="desc">{text}</p>
-                            <a href="" className="btn_shop btn btn-outline-light"><button onClick={()=> addItemToCart(productos)}>Comprar </button></a>
+                            <h2>{productos.title}</h2>
+                            <p className="desc">{productos.text}</p>
+                            <button className="btn_shop btn btn-outline-light" onClick={()=> addItemToCart(productos)}>Comprar </button>
                         </div>
                     </div>
                 </div>
@@ -31,3 +31,4 @@ export const CardGrid = ({data}) => {
     </>
     )
 }
+
