@@ -9,7 +9,9 @@ export {default as mexican} from "./imagenes/11mexican.jpg";
 export {default as oriental} from "./imagenes/12oriental.jpg";
 export {default as sandwich} from "./imagenes/16sandwich.jpg";
 export {default as slider} from "./imagenes/17slider.jpg";
-
+export {default as comida1} from "./imagenes/comida1.jpg";
+export {default as comida2} from "./imagenes/comida2.jpg";
+export {default as comida3} from "./imagenes/comida3.jpg";
 
 // SVG files // Usado en Cart.js
 export {default as cartFull} from "./svg/shopbag.svg"

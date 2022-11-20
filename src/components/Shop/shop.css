@@ -138,9 +138,9 @@
     transition: 0.5s;
     transform: translateY(200px);
     transition-delay: 0.5s;
-    margin-left: 9px;
-    margin-right: 9px;
-      
+    margin-left: 15px;
+    margin-right: 10px;
+    inline-size: 200px;
 }
 .compras .box:hover .content .btn_shop{
     transform: translateY(0px);

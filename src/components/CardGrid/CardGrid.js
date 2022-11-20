@@ -7,7 +7,7 @@ import { CartContext } from '../context/CartContext';
 export const CardGrid = ({data}) => {
     
     const { addItemToCart, } = useContext(CartContext)
-  return (
+    return ( 
     <>
         <div className="container compras">
               {data.map((productos, i) => (
@@ -19,8 +19,8 @@ export const CardGrid = ({data}) => {
                     <div className="content">
                         <div>
                             <h2>{productos.title}</h2>
-                            <p className="desc">{productos.text}</p>
-                            <button className="btn_shop btn btn-outline-light" onClick={()=> addItemToCart(productos)}>Comprar </button>
+                            <p className="desc">{productos.text} <strong>${productos.price}</strong></p>                     
+                            <button className="btn_shop btn btn-outline-light " onClick={()=> addItemToCart(productos)}>Comprar </button>
                         </div>
                     </div>
                 </div>

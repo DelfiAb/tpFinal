@@ -18,7 +18,7 @@ const productos = [
     {
         id: 'shp003',
         title: 'Masterclass de introducción',
-        text:  "Aprendé nuevas recetas fáciles con nuestros chefs! Inicio: 1/12/22, Duración: 4 clases de 2 hs., Horario: 15:00 a 17:00 Hs.",
+        text:  "Aprendé recetas fáciles con nuestros chefs! Inicio: 1/12/22, Duración: 4 clases de 2 hs., Horario: 15 a 17hs.",
         img: "./assets/img/claseint.jpg",
         amount: 100,
         price: 23900,
@@ -42,7 +42,7 @@ const productos = [
     {
         id: 'shp006',
         title: "Masterclass de repostería",
-        text:  "Aprendé todos los secretos de la repostería! Inicio: 24/11/22, Duración: 6 clases de 2 hs., Horario: 16:30 a 18:30 Hs.",
+        text:  "Aprendé los secretos de la repostería! Inicio: 24/11/22, Duración: 6 clases de 2 hs., Horario: 16 a 18hs.",
         img: "./assets/img/repos.jpg",
         amount: 100,
         price: 37800,

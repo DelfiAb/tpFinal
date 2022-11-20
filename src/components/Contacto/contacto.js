@@ -1,19 +1,25 @@
 import React from "react";
+import { comida1, comida2, comida3 } from "../../assets/imagenes";
 import "./contacto.css"; 
 
 export const Contacto = () => {
     return(
-        <>
+        <> 
             <section id="contact_us">
                 <div>
                     <p>Contact Us!</p>
                 </div>
             </section>
-
+         
             <section className="container-fluid" id="Formulario">
                 <div className="container">
                     <div className="row align-items-start">
-                        <div className="col">
+                        <div className="col contact_form">
+                            <div>
+                                <p className="consulta">
+                                    En Food Talk estamos para ayudarte, si tenes alguna duda, consulta o sugerencia, no dudes en contactarnos!
+                                </p>
+                            </div>
                             <div className="formulario row">
                                 <div className="nombre">
                                     <label for="FormControlInput1" className="form-label">Nombre</label>
@@ -47,19 +53,13 @@ export const Contacto = () => {
                             <div id="carousel" className="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
                                 <div className="carousel-inner ">
                                     <div className="carousel-item active">
-                                        <video width="500" height="700" autoplay muted loop>
-                                        <source src="./assets/videos/video1_mamaehijos.mp4"></source>
-                                        </video>
+                                        <img src={comida1} width="400" height="550" />
                                     </div>
                                     <div className="carousel-item">
-                                        <video width="500" height="700" autoplay muted loop>
-                                        <source src="./assets/videos/video2_pareja.mp4"></source>
-                                        </video>
+                                        <img src={comida2} width="400" height="550" />
                                     </div>
                                     <div className="carousel-item">
-                                        <video width="500" height="700" autoplay muted loop>
-                                        <source src="./assets/videos/video3_chicacomiendo.mp4"></source>
-                                        </video>
+                                        <img src={comida3} width="400" height="550" />
                                     </div>
                                 </div>
                                 <button className="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
