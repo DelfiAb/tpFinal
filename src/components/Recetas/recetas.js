@@ -117,7 +117,7 @@ export const Recetas = () => {
                     </div>
 
                 </div>
-                <br/> {/*como separo sin usar br, se salen las cards por el css */}
+                <br/> 
             </section>
 
         </>

@@ -54,3 +54,14 @@ poner videos --> como sacar cuando la pagina se hace mas chica?*/
     padding-bottom: 10px;
     font-size: 19px;
 }
+@media screen and (max-width: 768px) {
+    #carousel {
+        display: none;
+    }
+    .formulario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+}

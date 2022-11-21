@@ -22,8 +22,9 @@ export const About = () => {
                             <br /><em>Actualmente cocinando en la hermosa ciudad de Buenos Aires. </em> 
                         </p>
                     </div>
-                </div> 
+                </div>  
             </div>
+            
 
         </> 
     )

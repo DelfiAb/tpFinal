@@ -5,6 +5,9 @@
     --footer: rgb(218, 130, 67, 0.66);
     
 }
+nav {
+    background-color: var(--primary);
+}
 #nav{
     display: flex;
     margin: 100%;
@@ -42,7 +45,23 @@ nav a{
     text-decoration: none;
     color: var(--font_color);
 }
+#cart {
+    width: 40px;
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 25%;
+}
 
+#cart img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
-
+.scroll-down{
+    transition: all 0.5s ease-in 3s;
+}
 
