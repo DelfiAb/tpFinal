@@ -6,7 +6,9 @@ import { CartContext } from '../context/CartContext';
 // Este componente recibe los datos dentro de la propiedad {data} la cual es enviada desde Home.js
 export const CardGrid = ({data}) => {
     
-    const { addItemToCart, } = useContext(CartContext)
+    const { addItemToCart } = useContext(CartContext);
+    const { cartItems, } = useContext(CartContext)
+    
     return ( 
     <>
         <div className="container compras">

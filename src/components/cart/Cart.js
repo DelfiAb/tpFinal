@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+
 
 import { cartFull } from '../../assets/imagenes';
 import { CartContext } from '../context/CartContext';
-import { ItemCart } from '../ItemCart/ItemCart';
+
 
 import './Cart.css'
 
@@ -31,40 +33,42 @@ export const Cart = () => {
                 data-bs-toggle='modal'
                 data-bs-target='#cartContent'
         > 
-            <div id='cart'>
-                    <img
-                        alt='cart'
-                        src={cartFull}
-                    />
-                    <div id='itemNum'>
+            {productsLength > 0 ? (
+               <Link to={'cart'}>
+                    <div id='cart'>
+                            <img
+                                alt='cart'
+                                src={cartFull}
+                            />
+                            <div id='itemNum'>
 
-                        <div>
-                            {productsLength}
-                        </div>
+                                <div>
+                                    {productsLength}
+                                </div>
+
+                            </div>
+
+                    </div>
+               </Link> 
+            ):(
+
+                <div id='cart'>
+                            <img
+                                alt='cart'
+                                src={cartFull}
+                            />
+                            <div id='itemNum'>
+
+                                <div>
+                                    {productsLength}
+                                </div>
+
+                            </div>
 
                     </div>
 
-            </div>  
-
-            {cartItems && cartOpen && (
-                <div className='modal fade' id='cartContent' tabIndex='-1' aria-labelledby='cartContentLabel' aria-hidden='true'>
-                    <div id='cartOpen' className='modal-dialog'>
-                        <div className='modal-content'>
-                            <h2>Tu carrito</h2>
-
-                            {cartItems.length === 0 ? <p>tu carrito está vacío</p> : (
-                                <div>{cartItems.map((item, i) => (
-
-                                    <ItemCart key={i} item={item} />
-
-                                ))}</div>
-                            )}
-
-                            <h2>Total: ${total}</h2>
-                        </div>
-                    </div>
-                </div>
             )}
+
         </div>
     )
 }

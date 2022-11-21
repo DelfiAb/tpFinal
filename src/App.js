@@ -1,11 +1,3 @@
-/*
-import { VarConstLet } from "./components/fundamentos/01-VarConstLet";
-import { TemplateString } from "./components/fundamentos/02-TemplateString";
-import { JsFunction } from "./components/fundamentos/05-JsFunction";
-import { ObjetosLiterales } from "./components/fundamentos/03-Object";
-import { JsArray } from "./components/fundamentos/04-Array";
-*/
-
 import './App.css'
 import {Routes, Route} from "react-router-dom";
 
@@ -17,6 +9,7 @@ import { Recetaspages } from './components/pages/Recetaspages';
 import { Shoppages } from './components/pages/Shoppages';
 import { Contactopages } from './components/pages/Contactopages';
 import { CartProvider } from './components/context/CartContext';
+import { CartPage } from "./components/pages/Cartpages";
 
 
 
@@ -33,6 +26,7 @@ function App() {
           <Route path="/rece_titulo" element={<Recetaspages/>} />
           <Route path="/shop" element={<Shoppages/>} />
           <Route path="/contact_us" element={<Contactopages/>} />
+          <Route path="/cart" element={<CartPage/>} />
         </Routes>
  
       </CartProvider>
@@ -41,16 +35,7 @@ function App() {
    
       
     </>
-    
-    /*
-    <>
-      <VarConstLet />
-      <TemplateString />
-      <ObjetosLiterales />
-      <JsArray />
-      <JsFunction />
-      
-    </> */
+
   )
 
 }

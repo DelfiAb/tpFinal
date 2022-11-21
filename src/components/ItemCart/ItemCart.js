@@ -16,6 +16,22 @@ export const ItemCart = ({ item }) => {
                 {amount}
                 <p>Total: $ {amount * price } </p>
             </div>
+            <button className="btn btn-inicio"
+                onClick={()=>{
+                    console.log('Agregar')
+                    addItemToCart(item)
+                }}
+            >
+                Agregar
+            </button>
+            <button className="btn btn-inicio"
+                onClick={()=>{
+                    console.log('quitar')
+                    deleteItemToCart(item)
+                }}
+            >
+                Quitar
+            </button>
             <hr/>
         </div>
     )
