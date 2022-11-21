@@ -1,3 +1,27 @@
-.cartItem img{
-    width: 60px;
+:root{
+    --primary: rgb(255, 245, 230);
+    --font_color: black;
+    --titulos:white; 
+    --brown: rgb(144, 52, 19);
+    --footer: rgb(218, 130, 67, 0.66);
+}
+.cartItem{
+    margin: 30px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    
+}
+.info{
+    padding-left: 20px;
+}
+.info img{
+    width: 100px;
+    padding-bottom: 10px;
+}
+.cartTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
 }

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
 import { ItemCart } from '../ItemCart/ItemCart'
+import './Cartpages.css'
 
 export const CartPage = () => {
 
@@ -12,9 +13,9 @@ export const CartPage = () => {
 
   return (
       <div className='modal-content'>
-          <h2>Tu carrito</h2>
+          <h2 className='carritoTitle'>Tu carrito</h2>
 
-          {cartItems.length === 0 ? <p>Tu carrito está vacío</p> : (
+          {cartItems.length === 0 ? <p className='vacio'>Tu carrito está vacío! <br/> Ingresa en el Shop de Food Talk para encontrar recetas y elementos geniales para tu cocina.</p> : (
               <div>{cartItems.map((item, i) => (
 
                   <ItemCart key={i} item={item} />

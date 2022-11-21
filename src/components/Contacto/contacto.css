@@ -27,9 +27,6 @@
     background-color: var(--primary);
     padding-top: 20px;
 }
-/*poner el form en el medio de la pag, como?
-poner videos --> como sacar cuando la pagina se hace mas chica?*/
-
 #Formulario input{
     display: flex;
     justify-content: center;

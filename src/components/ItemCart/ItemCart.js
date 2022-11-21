@@ -3,35 +3,30 @@ import { CartContext } from '../context/CartContext'
 import './ItemCart.css'
 
 export const ItemCart = ({ item }) => {
-    const { title, amount, id, img, price} = item
+    const { title, amount, img, price} = item
     const { deleteItemToCart, addItemToCart } = useContext(CartContext)
     return (
         
         <div className='cartItem'>
-            <p>
-                {title} 
-            </p>
-            <img src={img} alt="" />
-            <div>
-                {amount}
-                <p>Total: $ {amount * price } </p>
+
+            <p className='cartTitle'> {title} </p>
+
+            <div className='info'>
+                <img src={img} alt="" /> 
+                <p>Cantidad: {amount}</p>
+                <p>Total: $ {amount * price} </p>
             </div>
+
             <button className="btn btn-inicio"
                 onClick={()=>{
                     console.log('Agregar')
                     addItemToCart(item)
-                }}
-            >
-                Agregar
-            </button>
+                }}>Agregar</button>
             <button className="btn btn-inicio"
                 onClick={()=>{
                     console.log('quitar')
                     deleteItemToCart(item)
-                }}
-            >
-                Quitar
-            </button>
+                }}>Quitar</button>
             <hr/>
         </div>
     )
